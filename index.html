@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yijicaidan > li {
+            list-style: none;
+            background-color: #eee;
+            float: left;
+            margin: 0px 3px;
+            width: 80px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            position: relative;
+        }
+        a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+        }
+        .yijihezi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .erjihezi {
+            position: absolute;
+            list-style: none; 
+            left: 81px; 
+            background-color: aliceblue;
+            width: 80px;
+            border-radius: 8px;
+            z-index: 1000;
+            display: none;
+        }
+        .erjicaidan{
+            padding: 0px;
+        }
+        .erjicaidan> li {
+            background-color: #eee;
+            width: 80px;
+            height: 120px;
+            display: block;
+            margin: 0px 18px;
+            align-items: center;
+        }
+        .yijicaidan > li:hover> .erjihezi{
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <div class="yijihezi"></div>
+    <ul class="yijicaidan">
+        <li>
+            <a href="#">娱乐</a>
+        </li>
+        <li>
+            <a href="#">科技</a>
+            <ul class="erjihezi">
+                <li><a href="#">数码</a></li>
+                <li><a href="#">手机</a></li>
+                <li><a href="#">电脑</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">美食</a>
+        </li>
+    </ul>
+</body>
+</html>
